@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Slava — hackedimages</title>
+
+<link rel="dns-prefetch" href="../../https://PLACEHOLDER.wpsho">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="../../wp-includes/css/dist/block-library/style.min.css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="../../wp-includes/css/dist/block-library/theme.min.css" media="all">
+<link rel="stylesheet" id="wc-block-vendors-style-css" href="../../wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css" media="all">
+<link rel="stylesheet" id="wc-block-style-css" href="../../wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css" media="all">
+<link rel="stylesheet" id="storefront-gutenberg-blocks-css" href="../../wp-content/themes/storefront/assets/css/base/gutenberg-blocks.css" media="all">
+<style id="storefront-gutenberg-blocks-inline-css">
+
+				.wp-block-button__link:not(.has-text-color) {
+					color: #333333;
+				}
+
+				.wp-block-button__link:not(.has-text-color):hover,
+				.wp-block-button__link:not(.has-text-color):focus,
+				.wp-block-button__link:not(.has-text-color):active {
+					color: #333333;
+				}
+
+				.wp-block-button__link:not(.has-background) {
+					background-color: #eeeeee;
+				}
+
+				.wp-block-button__link:not(.has-background):hover,
+				.wp-block-button__link:not(.has-background):focus,
+				.wp-block-button__link:not(.has-background):active {
+					border-color: #d5d5d5;
+					background-color: #d5d5d5;
+				}
+
+				.wp-block-quote footer,
+				.wp-block-quote cite,
+				.wp-block-quote__citation {
+					color: #6d6d6d;
+				}
+
+				.wp-block-pullquote cite,
+				.wp-block-pullquote footer,
+				.wp-block-pullquote__citation {
+					color: #6d6d6d;
+				}
+
+				.wp-block-image figcaption {
+					color: #6d6d6d;
+				}
+
+				.wp-block-separator.is-style-dots::before {
+					color: #333333;
+				}
+
+				.wp-block-file a.wp-block-file__button {
+					color: #333333;
+					background-color: #eeeeee;
+					border-color: #eeeeee;
+				}
+
+				.wp-block-file a.wp-block-file__button:hover,
+				.wp-block-file a.wp-block-file__button:focus,
+				.wp-block-file a.wp-block-file__button:active {
+					color: #333333;
+					background-color: #d5d5d5;
+				}
+
+				.wp-block-code,
+				.wp-block-preformatted pre {
+					color: #6d6d6d;
+				}
+
+				.wp-block-table:not( .has-background ):not( .is-style-stripes ) tbody tr:nth-child(2n) td {
+					background-color: #fdfdfd;
+				}
+
+				.wp-block-cover .wp-block-cover__inner-container h1:not(.has-text-color),
+				.wp-block-cover .wp-block-cover__inner-container h2:not(.has-text-color),
+				.wp-block-cover .wp-block-cover__inner-container h3:not(.has-text-color),
+				.wp-block-cover .wp-block-cover__inner-container h4:not(.has-text-color),
+				.wp-block-cover .wp-block-cover__inner-container h5:not(.has-text-color),
+				.wp-block-cover .wp-block-cover__inner-container h6:not(.has-text-color) {
+					color: #000000;
+				}
+
+				.wc-block-components-price-slider__range-input-progress,
+				.rtl .wc-block-components-price-slider__range-input-progress {
+					--range-color: #96588a;
+				}
+
+				/* Target only IE11 */
+				@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+					.wc-block-components-price-slider__range-input-progress {
+						background: #96588a;
+					}
+				}
+
+				.wc-block-components-button:not(.is-link) {
+					background-color: #333333;
+					color: #ffffff;
+				}
+
+				.wc-block-components-button:not(.is-link):hover,
+				.wc-block-components-button:not(.is-link):focus,
+				.wc-block-components-button:not(.is-link):active {
+					background-color: #1a1a1a;
+					color: #ffffff;
+				}
+
+				.wc-block-components-button:not(.is-link):disabled {
+					background-color: #333333;
+					color: #ffffff;
+				}
+
+				.wc-block-cart__submit-container {
+					background-color: #ffffff;
+				}
+
+				.wc-block-cart__submit-container::before {
+					color: rgba(220,220,220,0.5);
+				}
+
+				.wc-block-components-order-summary-item__quantity {
+					background-color: #ffffff;
+					border-color: #6d6d6d;
+					box-shadow: 0 0 0 2px #ffffff;
+					color: #6d6d6d;
+				}
+			
+</style>
+<style id="woocommerce-inline-inline-css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="storefront-style-css" href="../../wp-content/themes/storefront/style.css" media="all">
+<style id="storefront-style-inline-css">
+
+			.main-navigation ul li a,
+			.site-title a,
+			ul.menu li a,
+			.site-branding h1 a,
+			button.menu-toggle,
+			button.menu-toggle:hover,
+			.handheld-navigation .dropdown-toggle {
+				color: #333333;
+			}
+
+			button.menu-toggle,
+			button.menu-toggle:hover {
+				border-color: #333333;
+			}
+
+			.main-navigation ul li a:hover,
+			.main-navigation ul li:hover > a,
+			.site-title a:hover,
+			.site-header ul.menu li.current-menu-item > a {
+				color: #747474;
+			}
+
+			table:not( .has-background ) th {
+				background-color: #f8f8f8;
+			}
+
+			table:not( .has-background ) tbody td {
+				background-color: #fdfdfd;
+			}
+
+			table:not( .has-background ) tbody tr:nth-child(2n) td,
+			fieldset,
+			fieldset legend {
+				background-color: #fbfbfb;
+			}
+
+			.site-header,
+			.secondary-navigation ul ul,
+			.main-navigation ul.menu > li.menu-item-has-children:after,
+			.secondary-navigation ul.menu ul,
+			.storefront-handheld-footer-bar,
+			.storefront-handheld-footer-bar ul li > a,
+			.storefront-handheld-footer-bar ul li.search .site-search,
+			button.menu-toggle,
+			button.menu-toggle:hover {
+				background-color: #ffffff;
+			}
+
+			p.site-description,
+			.site-header,
+			.storefront-handheld-footer-bar {
+				color: #404040;
+			}
+
+			button.menu-toggle:after,
+			button.menu-toggle:before,
+			button.menu-toggle span:before {
+				background-color: #333333;
+			}
+
+			h1, h2, h3, h4, h5, h6, .wc-block-grid__product-title {
+				color: #333333;
+			}
+
+			.widget h1 {
+				border-bottom-color: #333333;
+			}
+
+			body,
+			.secondary-navigation a {
+				color: #6d6d6d;
+			}
+
+			.widget-area .widget a,
+			.hentry .entry-header .posted-on a,
+			.hentry .entry-header .post-author a,
+			.hentry .entry-header .post-comments a,
+			.hentry .entry-header .byline a {
+				color: #727272;
+			}
+
+			a {
+				color: #96588a;
+			}
+
+			a:focus,
+			button:focus,
+			.button.alt:focus,
+			input:focus,
+			textarea:focus,
+			input[type="button"]:focus,
+			input[type="reset"]:focus,
+			input[type="submit"]:focus,
+			input[type="email"]:focus,
+			input[type="tel"]:focus,
+			input[type="url"]:focus,
+			input[type="password"]:focus,
+			input[type="search"]:focus {
+				outline-color: #96588a;
+			}
+
+			button, input[type="button"], input[type="reset"], input[type="submit"], .button, .widget a.button {
+				background-color: #eeeeee;
+				border-color: #eeeeee;
+				color: #333333;
+			}
+
+			button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover, .widget a.button:hover {
+				background-color: #d5d5d5;
+				border-color: #d5d5d5;
+				color: #333333;
+			}
+
+			button.alt, input[type="button"].alt, input[type="reset"].alt, input[type="submit"].alt, .button.alt, .widget-area .widget a.button.alt {
+				background-color: #333333;
+				border-color: #333333;
+				color: #ffffff;
+			}
+
+			button.alt:hover, input[type="button"].alt:hover, input[type="reset"].alt:hover, input[type="submit"].alt:hover, .button.alt:hover, .widget-area .widget a.button.alt:hover {
+				background-color: #1a1a1a;
+				border-color: #1a1a1a;
+				color: #ffffff;
+			}
+
+			.pagination .page-numbers li .page-numbers.current {
+				background-color: #e6e6e6;
+				color: #636363;
+			}
+
+			#comments .comment-list .comment-content .comment-text {
+				background-color: #f8f8f8;
+			}
+
+			.site-footer {
+				background-color: #f0f0f0;
+				color: #6d6d6d;
+			}
+
+			.site-footer a:not(.button):not(.components-button) {
+				color: #333333;
+			}
+
+			.site-footer .storefront-handheld-footer-bar a:not(.button):not(.components-button) {
+				color: #333333;
+			}
+
+			.site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer h6, .site-footer .widget .widget-title, .site-footer .widget .widgettitle {
+				color: #333333;
+			}
+
+			.page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-title {
+				color: #000000;
+			}
+
+			.page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-content {
+				color: #000000;
+			}
+
+			@media screen and ( min-width: 768px ) {
+				.secondary-navigation ul.menu a:hover {
+					color: #595959;
+				}
+
+				.secondary-navigation ul.menu a {
+					color: #404040;
+				}
+
+				.main-navigation ul.menu ul.sub-menu,
+				.main-navigation ul.nav-menu ul.children {
+					background-color: #f0f0f0;
+				}
+
+				.site-header {
+					border-bottom-color: #f0f0f0;
+				}
+			}
+</style>
+<link rel="stylesheet" id="storefront-icons-css" href="../../wp-content/themes/storefront/assets/css/base/icons.css" media="all">
+<link rel="stylesheet" id="storefront-fonts-css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C300%2C300italic%2C400italic%2C600%2C700%2C900&subset=latin%2Clatin-ext&ver=3.5.1" media="all">
+<link rel="stylesheet" id="storefront-woocommerce-style-css" href="../../wp-content/themes/storefront/assets/css/woocommerce/woocommerce.css" media="all">
+<style id="storefront-woocommerce-style-inline-css">
+@font-face {
+				font-family: star;
+				src: url(http://OFFLINEZIP.wpsho/wp-content/plugins/woocommerce/assets/fonts//star.eot);
+				src:
+					url(http://OFFLINEZIP.wpsho/wp-content/plugins/woocommerce/assets/fonts//star.eot?#iefix) format("embedded-opentype"),
+					url(http://OFFLINEZIP.wpsho/wp-content/plugins/woocommerce/assets/fonts//star.woff) format("woff"),
+					url(http://OFFLINEZIP.wpsho/wp-content/plugins/woocommerce/assets/fonts//star.ttf) format("truetype"),
+					url(http://OFFLINEZIP.wpsho/wp-content/plugins/woocommerce/assets/fonts//star.svg#star) format("svg");
+				font-weight: 400;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: WooCommerce;
+				src: url(http://OFFLINEZIP.wpsho/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.eot);
+				src:
+					url(http://OFFLINEZIP.wpsho/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.eot?#iefix) format("embedded-opentype"),
+					url(http://OFFLINEZIP.wpsho/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.woff) format("woff"),
+					url(http://OFFLINEZIP.wpsho/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.ttf) format("truetype"),
+					url(http://OFFLINEZIP.wpsho/wp-content/plugins/woocommerce/assets/fonts//WooCommerce.svg#WooCommerce) format("svg");
+				font-weight: 400;
+				font-style: normal;
+			}
+
+			a.cart-contents,
+			.site-header-cart .widget_shopping_cart a {
+				color: #333333;
+			}
+
+			a.cart-contents:hover,
+			.site-header-cart .widget_shopping_cart a:hover,
+			.site-header-cart:hover > li > a {
+				color: #747474;
+			}
+
+			table.cart td.product-remove,
+			table.cart td.actions {
+				border-top-color: #ffffff;
+			}
+
+			.storefront-handheld-footer-bar ul li.cart .count {
+				background-color: #333333;
+				color: #ffffff;
+				border-color: #ffffff;
+			}
+
+			.woocommerce-tabs ul.tabs li.active a,
+			ul.products li.product .price,
+			.onsale,
+			.wc-block-grid__product-onsale,
+			.widget_search form:before,
+			.widget_product_search form:before {
+				color: #6d6d6d;
+			}
+
+			.woocommerce-breadcrumb a,
+			a.woocommerce-review-link,
+			.product_meta a {
+				color: #727272;
+			}
+
+			.wc-block-grid__product-onsale,
+			.onsale {
+				border-color: #6d6d6d;
+			}
+
+			.star-rating span:before,
+			.quantity .plus, .quantity .minus,
+			p.stars a:hover:after,
+			p.stars a:after,
+			.star-rating span:before,
+			#payment .payment_methods li input[type=radio]:first-child:checked+label:before {
+				color: #96588a;
+			}
+
+			.widget_price_filter .ui-slider .ui-slider-range,
+			.widget_price_filter .ui-slider .ui-slider-handle {
+				background-color: #96588a;
+			}
+
+			.order_details {
+				background-color: #f8f8f8;
+			}
+
+			.order_details > li {
+				border-bottom: 1px dotted #e3e3e3;
+			}
+
+			.order_details:before,
+			.order_details:after {
+				background: -webkit-linear-gradient(transparent 0,transparent 0),-webkit-linear-gradient(135deg,#f8f8f8 33.33%,transparent 33.33%),-webkit-linear-gradient(45deg,#f8f8f8 33.33%,transparent 33.33%)
+			}
+
+			#order_review {
+				background-color: #ffffff;
+			}
+
+			#payment .payment_methods > li .payment_box,
+			#payment .place-order {
+				background-color: #fafafa;
+			}
+
+			#payment .payment_methods > li:not(.woocommerce-notice) {
+				background-color: #f5f5f5;
+			}
+
+			#payment .payment_methods > li:not(.woocommerce-notice):hover {
+				background-color: #f0f0f0;
+			}
+
+			.woocommerce-pagination .page-numbers li .page-numbers.current {
+				background-color: #e6e6e6;
+				color: #636363;
+			}
+
+			.wc-block-grid__product-onsale,
+			.onsale,
+			.woocommerce-pagination .page-numbers li .page-numbers:not(.current) {
+				color: #6d6d6d;
+			}
+
+			p.stars a:before,
+			p.stars a:hover~a:before,
+			p.stars.selected a.active~a:before {
+				color: #6d6d6d;
+			}
+
+			p.stars.selected a.active:before,
+			p.stars:hover a:before,
+			p.stars.selected a:not(.active):before,
+			p.stars.selected a.active:before {
+				color: #96588a;
+			}
+
+			.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+				background-color: #eeeeee;
+				color: #333333;
+			}
+
+			.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger:hover {
+				background-color: #d5d5d5;
+				border-color: #d5d5d5;
+				color: #333333;
+			}
+
+			.button.added_to_cart:focus,
+			.button.wc-forward:focus {
+				outline-color: #96588a;
+			}
+
+			.added_to_cart,
+			.site-header-cart .widget_shopping_cart a.button,
+			.wc-block-grid__products .wc-block-grid__product .wp-block-button__link {
+				background-color: #eeeeee;
+				border-color: #eeeeee;
+				color: #333333;
+			}
+
+			.added_to_cart:hover,
+			.site-header-cart .widget_shopping_cart a.button:hover,
+			.wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover {
+				background-color: #d5d5d5;
+				border-color: #d5d5d5;
+				color: #333333;
+			}
+
+			.added_to_cart.alt, .added_to_cart, .widget a.button.checkout {
+				background-color: #333333;
+				border-color: #333333;
+				color: #ffffff;
+			}
+
+			.added_to_cart.alt:hover, .added_to_cart:hover, .widget a.button.checkout:hover {
+				background-color: #1a1a1a;
+				border-color: #1a1a1a;
+				color: #ffffff;
+			}
+
+			.button.loading {
+				color: #eeeeee;
+			}
+
+			.button.loading:hover {
+				background-color: #eeeeee;
+			}
+
+			.button.loading:after {
+				color: #333333;
+			}
+
+			@media screen and ( min-width: 768px ) {
+				.site-header-cart .widget_shopping_cart,
+				.site-header .product_list_widget li .quantity {
+					color: #404040;
+				}
+
+				.site-header-cart .widget_shopping_cart .buttons,
+				.site-header-cart .widget_shopping_cart .total {
+					background-color: #f5f5f5;
+				}
+
+				.site-header-cart .widget_shopping_cart {
+					background-color: #f0f0f0;
+				}
+			}
+				.storefront-product-pagination a {
+					color: #6d6d6d;
+					background-color: #ffffff;
+				}
+				.storefront-sticky-add-to-cart {
+					color: #6d6d6d;
+					background-color: #ffffff;
+				}
+
+				.storefront-sticky-add-to-cart a:not(.button) {
+					color: #333333;
+				}
+</style>
+<script src="../../wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script src="../../wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+
+
+
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head>
+
+<body class="archive author author-slava author-1 wp-embed-responsive theme-storefront woocommerce-no-js storefront-align-wide right-sidebar woocommerce-active">
+
+
+
+<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header" role="banner" style="">
+
+		<div class="col-full">		<a class="skip-link screen-reader-text" href="#site-navigation">Skip to navigation</a>
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+				<div class="site-branding">
+			<div class="beta site-title"><a href="../../index.html" rel="home">hackedimages</a></div><p class="site-description">Ещё один сайт на WordPress</p>		</div>
+					<div class="site-search">
+				<div class="widget woocommerce widget_product_search"><form role="search" method="get" class="woocommerce-product-search" action="http://OFFLINEZIP.wpsho/">
+	<label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
+	<input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products…" value="" name="s">
+	<button type="submit" value="Search">Search</button>
+	<input type="hidden" name="post_type" value="product">
+</form>
+</div>			</div>
+			</div><div class="storefront-primary-navigation"><div class="col-full">		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Navigation">
+		<button class="menu-toggle" aria-controls="site-navigation" aria-expanded="false"><span>Menu</span></button>
+			<div class="menu"><ul>
+<li><a href="../../index.html">Главная</a></li><li class="page_item page-item-7"><a href="../../cart/index.html">Cart</a></li>
+<li class="page_item page-item-8"><a href="../../checkout/index.html">Checkout</a></li>
+<li class="page_item page-item-9"><a href="../../my-account/index.html">My account</a></li>
+<li class="page_item page-item-6"><a href="../../shop/index.html">Shop</a></li>
+<li class="page_item page-item-2"><a href="../../sample-page/index.html">Пример страницы</a></li>
+</ul></div>
+<div class="menu"><ul>
+<li><a href="../../index.html">Главная</a></li><li class="page_item page-item-7"><a href="../../cart/index.html">Cart</a></li>
+<li class="page_item page-item-8"><a href="../../checkout/index.html">Checkout</a></li>
+<li class="page_item page-item-9"><a href="../../my-account/index.html">My account</a></li>
+<li class="page_item page-item-6"><a href="../../shop/index.html">Shop</a></li>
+<li class="page_item page-item-2"><a href="../../sample-page/index.html">Пример страницы</a></li>
+</ul></div>
+		</nav>
+				<ul id="site-header-cart" class="site-header-cart menu">
+			<li class="">
+							<a class="cart-contents" href="../../cart/index.html" title="View your shopping cart">
+								<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>0</span> <span class="count">0 items</span>
+			</a>
+					</li>
+			<li>
+				<div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content"></div></div>			</li>
+		</ul>
+			</div></div>
+	</header>
+
+	<div class="storefront-breadcrumb"><div class="col-full"><nav class="woocommerce-breadcrumb"><a href="../../http://OFFLINEZIP.wpsho">Home</a><span class="breadcrumb-separator"> / </span>Author: Slava</nav></div></div>
+	<div id="content" class="site-content" tabindex="-1">
+		<div class="col-full">
+
+		<div class="woocommerce"></div>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			<header class="page-header">
+				<h1 class="page-title">Автор: <span>Slava</span></h1>			</header>
+
+			
+<article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-1">
+
+			<header class="entry-header">
+		
+			<span class="posted-on">Posted on <a href="../../2021/05/01/%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80/index.html" rel="bookmark"><time class="entry-date published updated" datetime="2021-05-01T15:05:34+03:00">01.05.2021</time></a></span> <span class="post-author">by <a href="../../author/slava/index.html" rel="author">Slava</a></span> <span class="post-comments">— <a href="../../2021/05/01/%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80/#comments">1 Comment</a></span><h2 class="alpha entry-title"><a href="../../2021/05/01/%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80/index.html" rel="bookmark">Привет, мир!</a></h2>		</header>
+				<div class="entry-content">
+		
+<p>Добро пожаловать в WordPress. Это ваша первая запись. Отредактируйте или удалите ее, затем начинайте создавать!</p>
+		</div>
+		
+		<aside class="entry-taxonomy">
+						<div class="cat-links">
+				Category: <a href="../../category/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/index.html" rel="category tag">Без рубрики</a>			</div>
+			
+					</aside>
+
+		
+</article>
+
+		</main>
+	</div>
+
+
+<div id="secondary" class="widget-area" role="complementary">
+	<div id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://OFFLINEZIP.wpsho/">
+				<label>
+					<span class="screen-reader-text">Найти:</span>
+					<input type="search" class="search-field" placeholder="Поиск…" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Поиск">
+			</form></div>
+		<div id="recent-posts-2" class="widget widget_recent_entries">
+		<span class="gamma widget-title">Свежие записи</span>
+		<ul>
+											<li>
+					<a href="../../2021/05/01/%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80/index.html" aria-current="page">Привет, мир!</a>
+									</li>
+					</ul>
+
+		</div><div id="recent-comments-2" class="widget widget_recent_comments"><span class="gamma widget-title">Свежие комментарии</span><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/" rel="external nofollow ugc" class="url">Автор комментария</a></span> к записи <a href="../../2021/05/01/%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%82-%d0%bc%d0%b8%d1%80/#comment-1">Привет, мир!</a></li></ul></div><div id="archives-2" class="widget widget_archive"><span class="gamma widget-title">Архивы</span>
+			<ul>
+					<li><a href="../../2021/05/index.html">Май 2021</a></li>
+			</ul>
+
+			</div><div id="categories-2" class="widget widget_categories"><span class="gamma widget-title">Рубрики</span>
+			<ul>
+					<li class="cat-item cat-item-1"><a href="../../category/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/index.html">Без рубрики</a>
+</li>
+			</ul>
+
+			</div><div id="meta-2" class="widget widget_meta"><span class="gamma widget-title">Мета</span>
+		<ul>
+						<li><a href="../../wp-login.php">Войти</a></li>
+			<li><a href="../../feed/index.html">Лента записей</a></li>
+			<li><a href="../../comments/feed/index.html">Лента комментариев</a></li>
+
+			<li><a href="https://ru.wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		</div></div>
+
+		</div>
+	</div>
+
+	
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="col-full">
+
+					<div class="site-info">
+			© hackedimages 2021
+							<br>
+				<a href="https://woocommerce.com" target="_blank" title="WooCommerce - The Best eCommerce Platform for WordPress" rel="noreferrer">Built with Storefront & WooCommerce</a>.					</div>
+				<div class="storefront-handheld-footer-bar">
+			<ul class="columns-3">
+									<li class="my-account">
+						<a href="../../my-account/index.html">My Account</a>					</li>
+									<li class="search">
+						<a href="">Search</a>			<div class="site-search">
+				<div class="widget woocommerce widget_product_search"><form role="search" method="get" class="woocommerce-product-search" action="http://OFFLINEZIP.wpsho/">
+	<label class="screen-reader-text" for="woocommerce-product-search-field-1">Search for:</label>
+	<input type="search" id="woocommerce-product-search-field-1" class="search-field" placeholder="Search products…" value="" name="s">
+	<button type="submit" value="Search">Search</button>
+	<input type="hidden" name="post_type" value="product">
+</form>
+</div>			</div>
+								</li>
+									<li class="cart">
+									<a class="footer-cart-contents" href="../../cart/index.html">Cart				<span class="count">0</span>
+			</a>
+							</li>
+							</ul>
+		</div>
+		
+		</div>
+	</footer>
+
+	
+</div>
+
+<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Home","@id":"http:\/\/PLACEHOLDER.wpsho"}},{"@type":"ListItem","position":2,"item":{"name":"Author: Slava","@id":"http:\/\/OFFLINEZIP.wpshoauthor\/slava\/"}}]}</script>	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script src="../../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" id="jquery-blockui-js"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/OFFLINEZIP.wpshocart\/","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+<script src="../../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js" id="wc-add-to-cart-js"></script>
+<script src="../../wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js" id="js-cookie-js"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src="../../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js" id="woocommerce-js"></script>
+<script id="wc-cart-fragments-js-extra">
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_fd1222a91a8a6cba755698e07e87d579","fragment_name":"wc_fragments_fd1222a91a8a6cba755698e07e87d579","request_timeout":"5000"};
+</script>
+<script src="../../wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js" id="wc-cart-fragments-js"></script>
+<script src="../../wp-content/themes/storefront/assets/js/navigation.min.js" id="storefront-navigation-js"></script>
+<script src="../../wp-content/themes/storefront/assets/js/skip-link-focus-fix.min.js" id="storefront-skip-link-focus-fix-js"></script>
+<script src="../../wp-content/themes/storefront/assets/js/vendor/pep.min.js" id="jquery-pep-js"></script>
+<script src="../../wp-content/themes/storefront/assets/js/woocommerce/header-cart.min.js" id="storefront-header-cart-js"></script>
+<script src="../../wp-content/themes/storefront/assets/js/footer.min.js" id="storefront-handheld-footer-bar-js"></script>
+
+</body>
+</html>
